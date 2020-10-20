@@ -18,3 +18,5 @@ if [[ ${CI-} && $(git ls-files --other --modified --exclude-standard) ]]; then
   echo "  ./ci/steps/gendocs.sh"
   exit 1
 fi
+
+./ci/steps/aggregate_docs.ts
