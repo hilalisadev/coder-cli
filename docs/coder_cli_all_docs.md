@@ -3,10 +3,6 @@
 
 coder provides a CLI for working with an existing Coder Enterprise installation
 
-### Synopsis
-
-coder provides a CLI for working with an existing Coder Enterprise installation
-
 ### Options
 
 ```
@@ -27,11 +23,8 @@ coder provides a CLI for working with an existing Coder Enterprise installation
 * [coder urls](#coder-urls)	 - Interact with environment DevURLs
 * [coder users](#coder-users)	 - Interact with Coder user accounts
 
+
 ## coder users
-
-Interact with Coder user accounts
-
-### Synopsis
 
 Interact with Coder user accounts
 
@@ -52,11 +45,8 @@ Interact with Coder user accounts
 * [coder](#coder)	 - coder provides a CLI for working with an existing Coder Enterprise installation
 * [coder users ls](#coder-users-ls)	 - list all user accounts
 
+
 ## coder users ls
-
-list all user accounts
-
-### Synopsis
 
 list all user accounts
 
@@ -88,11 +78,8 @@ coder users ls -o json | jq .[] | jq -r .email
 
 * [coder users](#coder-users)	 - Interact with Coder user accounts
 
+
 ## coder urls
-
-Interact with environment DevURLs
-
-### Synopsis
 
 Interact with environment DevURLs
 
@@ -115,11 +102,8 @@ Interact with environment DevURLs
 * [coder urls ls](#coder-urls-ls)	 - List all DevURLs for an environment
 * [coder urls rm](#coder-urls-rm)	 - Remove a dev url
 
+
 ## coder urls rm
-
-Remove a dev url
-
-### Synopsis
 
 Remove a dev url
 
@@ -143,11 +127,8 @@ coder urls rm [environment_name] [port] [flags]
 
 * [coder urls](#coder-urls)	 - Interact with environment DevURLs
 
+
 ## coder urls ls
-
-List all DevURLs for an environment
-
-### Synopsis
 
 List all DevURLs for an environment
 
@@ -172,11 +153,8 @@ coder urls ls [environment_name] [flags]
 
 * [coder urls](#coder-urls)	 - Interact with environment DevURLs
 
+
 ## coder urls create
-
-Create a new devurl for an environment
-
-### Synopsis
 
 Create a new devurl for an environment
 
@@ -202,11 +180,8 @@ coder urls create [env_name] [port] [--access <level>] [--name <name>] [flags]
 
 * [coder urls](#coder-urls)	 - Interact with environment DevURLs
 
+
 ## coder sync
-
-Establish a one way directory sync to a Coder environment
-
-### Synopsis
 
 Establish a one way directory sync to a Coder environment
 
@@ -230,6 +205,7 @@ coder sync [local directory] [<env name>:<remote directory>] [flags]
 ### SEE ALSO
 
 * [coder](#coder)	 - coder provides a CLI for working with an existing Coder Enterprise installation
+
 
 ## coder sh
 
@@ -265,6 +241,7 @@ coder sh backend-env
 
 * [coder](#coder)	 - coder provides a CLI for working with an existing Coder Enterprise installation
 
+
 ## coder secrets
 
 Interact with Coder Secrets
@@ -294,11 +271,8 @@ Interact with secrets objects owned by the active user.
 * [coder secrets rm](#coder-secrets-rm)	 - Remove one or more secrets by name
 * [coder secrets view](#coder-secrets-view)	 - View a secret by name
 
+
 ## coder secrets view
-
-View a secret by name
-
-### Synopsis
 
 View a secret by name
 
@@ -329,11 +303,8 @@ coder secrets view mysql-password
 
 * [coder secrets](#coder-secrets)	 - Interact with Coder Secrets
 
+
 ## coder secrets rm
-
-Remove one or more secrets by name
-
-### Synopsis
 
 Remove one or more secrets by name
 
@@ -364,11 +335,8 @@ coder secrets rm mysql-password mysql-user
 
 * [coder secrets](#coder-secrets)	 - Interact with Coder Secrets
 
+
 ## coder secrets ls
-
-List all secrets owned by the active user
-
-### Synopsis
 
 List all secrets owned by the active user
 
@@ -392,6 +360,7 @@ coder secrets ls [flags]
 ### SEE ALSO
 
 * [coder secrets](#coder-secrets)	 - Interact with Coder Secrets
+
 
 ## coder secrets create
 
@@ -434,11 +403,8 @@ coder secrets create aws-credentials --from-file ./credentials.json
 
 * [coder secrets](#coder-secrets)	 - Interact with Coder Secrets
 
+
 ## coder logout
-
-Remove local authentication credentials if any exist
-
-### Synopsis
 
 Remove local authentication credentials if any exist
 
@@ -462,11 +428,8 @@ coder logout [flags]
 
 * [coder](#coder)	 - coder provides a CLI for working with an existing Coder Enterprise installation
 
+
 ## coder login
-
-Authenticate this client for future operations
-
-### Synopsis
 
 Authenticate this client for future operations
 
@@ -489,6 +452,7 @@ coder login [Coder Enterprise URL eg. https://my.coder.domain/] [flags]
 ### SEE ALSO
 
 * [coder](#coder)	 - coder provides a CLI for working with an existing Coder Enterprise installation
+
 
 ## coder envs
 
@@ -516,6 +480,7 @@ Perform operations on the Coder environments owned by the active user.
 * [coder](#coder)	 - coder provides a CLI for working with an existing Coder Enterprise installation
 * [coder envs ls](#coder-envs-ls)	 - list all environments owned by the active user
 * [coder envs stop](#coder-envs-stop)	 - stop Coder environments by name
+
 
 ## coder envs stop
 
@@ -561,6 +526,7 @@ coder envs --user charlie@coder.com ls -o json \
 
 * [coder envs](#coder-envs)	 - Interact with Coder environments
 
+
 ## coder envs ls
 
 list all environments owned by the active user
@@ -591,6 +557,7 @@ coder envs ls [flags]
 
 * [coder envs](#coder-envs)	 - Interact with Coder environments
 
+
 ## coder config-ssh
 
 Configure SSH to access Coder environments
@@ -620,6 +587,7 @@ coder config-ssh [flags]
 ### SEE ALSO
 
 * [coder](#coder)	 - coder provides a CLI for working with an existing Coder Enterprise installation
+
 
 ## coder completion
 
@@ -690,3 +658,4 @@ MacOS:
 ### SEE ALSO
 
 * [coder](#coder)	 - coder provides a CLI for working with an existing Coder Enterprise installation
+

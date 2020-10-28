@@ -5,3 +5,8 @@ ENV CI=true
 
 RUN go get golang.org/x/tools/cmd/goimports
 RUN go get github.com/mattn/goveralls
+
+# needed for Deno installation
+RUN apt update && apt install zip curl
+RUN curl -fsSL https://deno.land/x/install/install.sh | sh
+RUN export DENO_INSTALL="/root/.deno" && export PATH="$DENO_INSTALL/bin:$PATH"

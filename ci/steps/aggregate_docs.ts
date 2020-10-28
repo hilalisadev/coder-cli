@@ -1,6 +1,6 @@
 #!/usr/local/bin/deno run --allow-read --allow-write
 
-const newFilename = "aggregated.md"
+const newFilename = "coder_cli_all_docs.md"
 const newPath = `./docs/${newFilename}`
 Deno.chdir(`${new URL(".", import.meta.url).pathname}/../../`)
 
