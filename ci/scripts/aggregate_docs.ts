@@ -1,4 +1,3 @@
-#!/usr/local/bin/deno run --allow-read --allow-write
 
 const newFilename = "coder_cli_all_docs.md"
 const newPath = `./docs/${newFilename}`
@@ -37,5 +36,3 @@ try {
     await Deno.remove(newPath)
 } catch  {}
 await Deno.writeFile(newPath, new TextEncoder().encode(aggregated))
-
-console.log("Done")

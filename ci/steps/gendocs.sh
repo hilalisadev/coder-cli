@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-echo "Generating docs..."
+echo "-- Generating docs"
 
 cd "$(dirname "$0")"
 cd ../../
@@ -16,7 +16,8 @@ if ! command -v deno >/dev/null; then
   exit 1
 fi
 
-./ci/steps/aggregate_docs.ts
+echo "-- Aggregating docs"
+deno run --allow-read --allow-write ./ci/scripts/aggregate_docs.ts
 
 if [[ ${CI-} && $(git ls-files --other --modified --exclude-standard) ]]; then
   echo "Documentation needs generation:"
