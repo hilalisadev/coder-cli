@@ -1,5 +1,12 @@
 # ci
 
+## steps
+- `steps/build.sh` builds release artifacts with the appropriate release tag.
+It is required for merging as it ensures that build artifacts can be produced from source.
+- `steps/fmt.sh` checks that all Go code is properly formatted.
+- `steps/lint.sh` checks that the `.golangci.yml` rules pass successfully.
+- `steps/gendocs.sh` auto-generates the CLI documentation in `/docs` and ensures it is up-to-date.
+
 ## integration tests
 
 ### `tcli`
