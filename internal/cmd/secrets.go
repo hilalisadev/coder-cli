@@ -82,7 +82,7 @@ coder secrets create aws-credentials --from-file ./credentials.json`,
 				name  = args[0]
 				value string
 				err   error
-				ctx = cmd.Context()
+				ctx   = cmd.Context()
 			)
 			client, err := newClient(ctx)
 			if err != nil {
@@ -175,7 +175,7 @@ func viewSecretCmd(userEmail *string) func(cmd *cobra.Command, args []string) er
 	return func(cmd *cobra.Command, args []string) error {
 		var (
 			name = args[0]
-			ctx = cmd.Context()
+			ctx  = cmd.Context()
 		)
 		client, err := newClient(ctx)
 		if err != nil {

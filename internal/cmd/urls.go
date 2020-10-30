@@ -136,7 +136,7 @@ func createDevURLCmd() *cobra.Command {
 			var (
 				envName = args[0]
 				port    = args[1]
-				ctx = cmd.Context()
+				ctx     = cmd.Context()
 			)
 
 			portNum, err := validatePort(port)
@@ -214,7 +214,7 @@ func removeDevURL(cmd *cobra.Command, args []string) error {
 	var (
 		envName = args[0]
 		port    = args[1]
-		ctx = cmd.Context()
+		ctx     = cmd.Context()
 	)
 
 	portNum, err := validatePort(port)
