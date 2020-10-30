@@ -22,5 +22,5 @@ export CODER_PASSWORD=...
 Then, simply run the test command from the project root
 
 ```sh
-go test -v ./ci/integration
+./ci/steps/integration.sh
 ```
